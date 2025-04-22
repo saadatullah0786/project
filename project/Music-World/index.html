@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        background-color: black;
+      }
+      .navbar {
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 2px;
+        background-color: transparent;
+        color: white;
+        background-color: #2a0632;
+      }
+      .navbar-brand img {
+        border-radius: 60%;
+      }
+      .navbar a {
+        color: white;
+      }
+      .nav-link:hover {
+        text-decoration: underline;
+        transition: 1s;
+        color: blue;
+      }
+      .carousel-inner img {
+        width: 1100px;
+        height: 500px;
+      }
+      #cl{
+        margin-left: 300px;
+      }
+      
+      .card{
+        height: 50vh;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+      .card{
+        object-fit: cover;
+        transition: transform 0.08s;
+        height: 80vh;
+      }
+      .card:hover{
+        transform: scale(1.1);
+
+       }
+
+       .btn-info:hover{
+        background-color: black;
+        color: white;
+        transition: 1s;
+       }
+
+       footer {
+      background-color: #333; /* Dark background */
+      color: white; /* White text */
+      padding: 20px 0; /* Vertical padding */
+      text-align: center; /* Centered content */
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Links inside the footer */
+    footer a {
+      color: #ffcc00; /* Golden color for links */
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* Hover effect for footer links */
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Copyright text styling */
+    .footer-bottom {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ccc;
+    }
+      /* .carousel-inner{
+        height: 50vh;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+      .carousel-inner img{
+        object-fit: cover;
+        transition: transform 0.08s;
+        height: 80vh;
+      }
+      .carousel-inner img:hover {
+        transform: scale(1.1); */
+       */
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img
+                  src="https://th.bing.com/th/id/OIP.tbqUFi1STgHWk3mSci02cAHaFj?w=316&h=190&c=7&r=0&o=5&pid=1.7"
+                  width="100px"
+                  alt=""
+                /><span style="color: tomato; margin: 10px"
+                  >MUSIC WORLD
+                </span></a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link" href="music.html">music </a> -->
+                  </li>
+                  <li class="nav-item dropdown">
+                    <!-- <a
+                      class="nav-link dropdown-toggle"
+                      href="about.html"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      about
+                    </a> -->
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link" href="contact.html">contact</a> -->
+                  </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 200px">
+                  <input
+                    class="form-control me-2"
+                    type="Search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-success"
+                    type="submit "
+                    style="color: white"
+                  >
+                    Search
+                  </button>
+                </form>
+                <a class="nav-link" href="form.html" style="color: white"
+                  >REGISTER / LOGIN</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row" id="cl">
+        <div class="col-8">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+            style="margin-top: 50px"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://open.spotify.com/album/4pa9j1sjBWANSmeRGrO1qS"><img
+                  src="https://i.scdn.co/image/ab67616d00001e02b3324226fff32253c395509a"
+                  class="d-block w-100"
+                  alt="..."
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://open.spotify.com/album/0KD9Ddk52NSmYdzW8QcgFY"><img src="https://i.scdn.co/image/ab67616d00001e02208e53a40851349531c90286" class="d-block w-100" alt="..." /></a>
+              </div>
+              <div class="carousel-item">
+               <a href="https://open.spotify.com/album/4JsZodknDILTDTnswlIYIf"><img src="https://i.scdn.co/image/ab67616d00001e029f93eb31e6caa86dd5f65f51" class="d-block w-100" alt="..." /></a> 
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-4">
+
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="row">
+
+        <!-- CARD 1 -->
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO3ckHLO"><img class="card-img-top" src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3ckHLO-default.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title"> ALBUM </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info " style="padding: 0 35px 0 35px; margin-left: 55px;"> SUBH</a>
+            </div>
+          </div>
+        </div>
+          
+        <!-- CARD-2 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem; background: #000; color: #fff;">
+            <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx"><img class="card-img-top" src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1n6IJz-default.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title"> ALBUM </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info " style="padding: 0 35px 0 35px; margin-left: 30px;"> ATIF ASLAM</a>
+            </div>
+          </div>
+        </div>
+
+          <!-- CARD-3 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a target="_blank" href="https://open.spotify.com/album/1QOwvBk3LNWAaEvARxPDNd"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02627b5b17cb48f6e6956b842e" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">BEST COLLECTION SONGS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info"  style="padding: 0 35px 0 35px; margin-left: 30px;">ARJIT SINGH</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- CARD-4 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0QBBOU"><img class="card-img-top" src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO0QBBOU-default.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">ARTIST</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info" style="padding: 0 35px 0 35px; margin-left: 55px;">PRITAM</a>
+            </div>
+          </div>
+        </div>
+
+
+           <!-- CARD-5 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/track/7mCh0uF0iW7AuDr7pZro21"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028c2440bff39213bcf61b07c0" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">SUKOON</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info" style="padding: 0 35px 0 35px; margin-left: 15px;">HASSAN & ROSHAAN</a>
+            </div>
+          </div>
+        </div>
+
+
+          <!-- CARD-6 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/track/6eeinYVA4kc7ZkN7irTmzK"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02bd15d17981337ceb9b5b8d93" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">AAYI AAYI</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info " style="padding: 0 35px 0 35px; margin-left: 20px;">NOMAN ALI RAJPER</a>
+            </div>
+          </div>
+        </div>
+
+          <!-- CARD-7 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/track/6dPCsJmys61wAVJIfsRPXi"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e021d9d5dc54ac1752ea7b6f234" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">DO PAL</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info" style="padding: 0 35px 0 35px; margin-left: 25px;">COACHSAHB</a>
+            </div>
+          </div>
+        </div>
+
+         <!-- CARD-8 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/album/3I8PdIhk6pNm8Kv0HiF14V"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02ba03ff79dad25f7c3542382f" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">TUJHE KITNA CHAHNE LAGE</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info" style="padding: 0 35px 0 35px; margin-left: 25px;">ARIJIT SINGH & MITHOON</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD-9 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/album/7grtFo2pj5wwRTM7c6NI9y?highlight=spotify:track:4XTgFBxBHN6var1BzAgE1m"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e021344800458a38197bfc721f3" alt="Card image cap"> </a>
+            <div class="card-body">
+              <h5 class="card-title">JHOL</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info" style="padding: 0 35px 0 35px; margin-left: 0px;">MANU & ANNURAL KHALID</a>
+            </div>
+          </div>
+        </div>
+
+         <!-- CARD-10 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/album/27XIdXAZ9IJ9UGqVjJzOcm?highlight=spotify:track:2618Fg2I7K5leCzDUhOjbr"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02096e2a4581cab7a4bba393c3" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">HEER</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info" style="padding: 0 35px 0 35px; margin-left: 20px;">ALI HAIDER ALI RAZA </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD-11 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/album/2PxW90KYw7dKSgRTwu45hS?highlight=spotify:track:4LMlVCXHJtCE9abhmn0mYo"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e0285c5968be0d0d9c545241124" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">PAL PAL</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info"style="padding: 0 35px 0 35px; margin-left: 20px;" >ALI SOOMRO MUSIC</a>
+            </div>
+          </div>
+        </div>
+          
+
+        <!-- CARD-12 -->
+
+        <div class="col mt-3">
+          <div class="card" style="width: 18rem;background: #000; color: #fff;">
+            <a href="https://open.spotify.com/album/3M8j6IwEcqDnf0V3y3ZI3C"><img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02931b61b7382db17ed15e75fc" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title">SAFAR</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info" style="padding: 0 35px 0 35px; margin-left: 35px;">BAYAAN</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <footer>
+            <!-- Main footer content with navigation or social links -->
+            <div class="footer-content">
+              <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+              </p>
+            </div>
+        
+            <!-- Copyright and bottom text -->
+            <div class="footer-bottom">
+              &copy; 2025 MyWebsite. All rights reserved.
+            </div>
+          </footer>
+          <!-- Footer section ends -->
+
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col">
+          <h2>Personal Information Form</h2>
+          <form action="/submit" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+        
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country" required><br><br>
+        
+            <label for="contact">Contact Number:</label><br>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10,15}" required><br><br>
+        
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div> -->
+
+      
+
+
+    </div>
+  </body>
+</html>
